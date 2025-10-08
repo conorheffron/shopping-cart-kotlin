@@ -1,4 +1,4 @@
-package com.example.shoppingcart
+package org.example.cart.dto
 
 data class CartItem(
     val id: Int,
