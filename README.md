@@ -1,5 +1,7 @@
 # shopping-cart-kotlin
 
+[![Android CI](https://github.com/conorheffron/shopping-cart-kotlin/actions/workflows/android.yml/badge.svg)](https://github.com/conorheffron/shopping-cart-kotlin/actions/workflows/android.yml)
+
 ### Build Project & Run Tests
 ```
 ./gradlew clean buil test
