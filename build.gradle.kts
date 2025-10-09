@@ -7,6 +7,8 @@ plugins {
     kotlin("jvm") version "1.9.10"
     kotlin("plugin.spring") version "1.9.10"
     application
+    id("org.jetbrains.kotlinx.kover") version "0.9.1"
+    id("jacoco") // Apply the JaCoCo plugin
 }
 
 repositories {
@@ -25,6 +27,7 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    finalizedBy(tasks.jacocoTestReport)
     // Configure test logging
     testLogging {
         // Show events for passed, failed, and skipped tests
@@ -40,6 +43,32 @@ tasks.test {
         showCauses = true
         showExceptions = true
         showStackTraces = true
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.10" // Specify the JaCoCo version
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test) // Ensure tests run before generating the report
+
+    reports {
+        xml.required.set(true) // Generate XML report (useful for CI tools)
+        html.required.set(true) // Generate HTML report for local viewing
+        csv.required.set(false) // Disable CSV report (optional)
+    }
+}
+
+tasks.jacocoTestCoverageVerification {
+    dependsOn(tasks.jacocoTestReport) // Ensure the report is available
+
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.8.toBigDecimal() // Set minimum coverage to 80%
+            }
+        }
     }
 }
 
