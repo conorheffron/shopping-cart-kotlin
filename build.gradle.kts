@@ -9,6 +9,14 @@ plugins {
     application
     id("org.jetbrains.kotlinx.kover") version "0.9.1"
     id("jacoco") // Apply the JaCoCo plugin
+    id("org.sonarqube") version "6.3.1.5724"
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "conorheffron_shopping-cart-kotlin")
+        property("sonar.organization", "conorheffron")
+    }
 }
 
 repositories {
