@@ -25,6 +25,22 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    // Configure test logging
+    testLogging {
+        // Show events for passed, failed, and skipped tests
+        events("passed", "failed", "skipped")
+
+        // Show the standard output and error streams in the console
+        showStandardStreams = true
+
+        // Customize the logging format
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+
+        // Show test results in real-time
+        showCauses = true
+        showExceptions = true
+        showStackTraces = true
+    }
 }
 
 application {
