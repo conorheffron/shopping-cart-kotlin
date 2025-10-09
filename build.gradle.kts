@@ -1,20 +1,77 @@
-plugins {
-    id("java")
-}
+group = "org.example.cart"
+version = "1.0.0-RELEASE"
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+plugins {
+    id("org.springframework.boot") version "3.2.0"
+    id("io.spring.dependency-management") version "1.1.3"
+    kotlin("jvm") version "1.9.10"
+    kotlin("plugin.spring") version "1.9.10"
+    application
+    id("org.jetbrains.kotlinx.kover") version "0.9.1"
+    id("jacoco") // Apply the JaCoCo plugin
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("org.mockito:mockito-core:5.5.0") // For mocking
 }
 
 tasks.test {
     useJUnitPlatform()
+    finalizedBy(tasks.jacocoTestReport)
+    // Configure test logging
+    testLogging {
+        // Show events for passed, failed, and skipped tests
+        events("passed", "failed", "skipped")
+
+        // Show the standard output and error streams in the console
+        showStandardStreams = true
+
+        // Customize the logging format
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+
+        // Show test results in real-time
+        showCauses = true
+        showExceptions = true
+        showStackTraces = true
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.10" // Specify the JaCoCo version
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test) // Ensure tests run before generating the report
+
+    reports {
+        xml.required.set(true) // Generate XML report (useful for CI tools)
+        html.required.set(true) // Generate HTML report for local viewing
+        csv.required.set(false) // Disable CSV report (optional)
+    }
+}
+
+tasks.jacocoTestCoverageVerification {
+    dependsOn(tasks.jacocoTestReport) // Ensure the report is available
+
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.8.toBigDecimal() // Set minimum coverage to 80%
+            }
+        }
+    }
+}
+
+application {
+    mainClass.set("com.example.cart.ShoppingCartApplication")
 }
