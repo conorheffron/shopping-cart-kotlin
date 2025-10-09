@@ -13,6 +13,8 @@
           <option value="clean" />
           <option value="build" />
           <option value="test" />
+          <option value="koverXmlReport" />
+          <option value="jacocoTestReport" />
         </list>
       </option>
       <option name="vmOptions" />
