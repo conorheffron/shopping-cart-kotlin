@@ -2,6 +2,10 @@
 
 [![Android CI](https://github.com/conorheffron/shopping-cart-kotlin/actions/workflows/android.yml/badge.svg)](https://github.com/conorheffron/shopping-cart-kotlin/actions/workflows/android.yml)
 
+[![SonarQube Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=conorheffron_shopping-cart-kotlin)](https://sonarcloud.io/summary/new_code?id=conorheffron_shopping-cart-kotlin)
+
+[Sonar Scan & Test Coverage - Overall Summary](https://sonarcloud.io/summary/overall?id=conorheffron_shopping-cart-kotlin&branch=main)
+
 ### Build Project & Run Tests
 ```
 ./gradlew clean buil test
