@@ -15,6 +15,10 @@
 ```
 src/main/java/org/example/cart/ShoppingCartApplicationKt
 ```
+#### OR
+```
+./gradlew bootRun
+```
 
 ### Add Item with ID 1 via POST API Call
 ```
