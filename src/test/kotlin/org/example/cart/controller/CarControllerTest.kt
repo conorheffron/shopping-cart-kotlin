@@ -1,6 +1,5 @@
-package com.example.cart.controller
+package org.example.cart.controller
 
-import org.example.cart.controller.CartController
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.http.MediaType
