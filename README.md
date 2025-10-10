@@ -13,7 +13,7 @@
 
 ### Run API App
 ```
-src/main/java/org/example/shoppingcart/ShoppingCartApplication.kt
+src/main/java/org/example/cart/ShoppingCartApplicationKt
 ```
 
 ### Add Item with ID 1 via POST API Call
@@ -26,6 +26,8 @@ curl -X POST http://localhost:8080/api/cart/add \
 "price": 999.99,
 "quantity": 1
 }'
+
+Item 'Laptop' added to the cart.%  
 ```
 
 ### Add Item with ID 22 via POST API Call
@@ -41,6 +43,8 @@ curl -X POST http://localhost:8080/api/cart/add \
 ```
 ### View Carts
 ```
-curl -X GET http://localhost:8080/api/cart/view \
+ curl -X GET http://localhost:8080/api/cart/view \
 -H "Accept: application/json"
+
+[{"id":1,"name":"Laptop","price":999.99,"quantity":1},{"id":22,"name":"shreddies","price":5.99,"quantity":3}]%      
 ```

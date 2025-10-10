@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ShoppingCartApplicationKt" type="JetRunConfigurationType" singleton="false" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="org.example.cart.ShoppingCartApplicationKt" />
+    <module name="shopping-cart-kotlin.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

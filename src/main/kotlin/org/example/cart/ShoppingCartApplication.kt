@@ -1,4 +1,4 @@
-package com.example.shoppingcart
+package org.example.cart
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

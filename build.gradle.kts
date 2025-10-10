@@ -81,5 +81,5 @@ tasks.jacocoTestCoverageVerification {
 }
 
 application {
-    mainClass.set("com.example.cart.ShoppingCartApplication")
+    mainClass.set("org.example.cart.ShoppingCartApplicationKt")
 }
