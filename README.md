@@ -8,7 +8,7 @@
 
 ### Build Project & Run Tests
 ```
-./gradlew clean buil test
+./gradlew clean build test
 ```
 
 ### Run API App
