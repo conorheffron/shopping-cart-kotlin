@@ -11,11 +11,11 @@
 ./gradlew clean build test
 ```
 
-### Run API App
+### Run API App main() directly
 ```
 src/main/java/org/example/cart/ShoppingCartApplicationKt
 ```
-#### OR
+  ##### OR
 ```
 ./gradlew bootRun
 ```
