@@ -47,7 +47,7 @@ curl -X POST http://localhost:8080/api/cart/add \
 ```
 ### View Carts
 ```
- curl -X GET http://localhost:8080/api/cart/view \
+curl -X GET http://localhost:8080/api/cart/view \
 -H "Accept: application/json"
 
 [{"id":1,"name":"Laptop","price":999.99,"quantity":1},{"id":22,"name":"shreddies","price":5.99,"quantity":3}]%      
