@@ -1,5 +1,5 @@
 group = "org.example.cart"
-version = "1.0.2-RELEASE"
+version = "1.0.3-RELEASE"
 
 plugins {
     id("org.springframework.boot") version "3.2.0"
