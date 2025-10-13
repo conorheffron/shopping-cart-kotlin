@@ -30,7 +30,7 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.mockito:mockito-core:5.5.0") // For mocking
+    testImplementation("org.mockito:mockito-core:5.20.0") // For mocking
 }
 
 tasks.test {
