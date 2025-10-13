@@ -2,8 +2,8 @@ group = "org.example.cart"
 version = "1.0.3-RELEASE"
 
 plugins {
-    id("org.springframework.boot") version "3.2.0"
     kotlin("jvm") version "2.2.20"
+    id("org.springframework.boot") version "3.5.6"
     id("io.spring.dependency-management") version "1.1.7"
     kotlin("plugin.spring") version "1.9.10"
     application
