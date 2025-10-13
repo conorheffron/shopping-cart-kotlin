@@ -2,9 +2,9 @@ group = "org.example.cart"
 version = "1.0.3-RELEASE"
 
 plugins {
+    kotlin("jvm") version "2.2.20"
     id("org.springframework.boot") version "3.5.6"
     id("io.spring.dependency-management") version "1.1.7"
-    kotlin("jvm") version "1.9.10"
     kotlin("plugin.spring") version "1.9.10"
     application
     id("org.jetbrains.kotlinx.kover") version "0.9.2"
