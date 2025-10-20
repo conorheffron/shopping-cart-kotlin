@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "2.2.20"
     id("org.springframework.boot") version "3.5.6"
     id("io.spring.dependency-management") version "1.1.7"
-    kotlin("plugin.spring") version "1.9.10"
+    kotlin("plugin.spring") version "2.2.20"
     application
     id("org.jetbrains.kotlinx.kover") version "0.9.2"
     id("jacoco") // Apply the JaCoCo plugin
