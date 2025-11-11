@@ -1,5 +1,7 @@
 # shopping-cart-kotlin
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 [![Android CI](https://github.com/conorheffron/shopping-cart-kotlin/actions/workflows/android.yml/badge.svg)](https://github.com/conorheffron/shopping-cart-kotlin/actions/workflows/android.yml)
 
 [![SonarQube Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=conorheffron_shopping-cart-kotlin)](https://sonarcloud.io/summary/new_code?id=conorheffron_shopping-cart-kotlin)
