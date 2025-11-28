@@ -1,5 +1,5 @@
 group = "org.example.cart"
-version = "1.0.7-RELEASE"
+version = "1.0.8-RELEASE"
 
 plugins {
     kotlin("jvm") version "2.2.21"
@@ -9,7 +9,7 @@ plugins {
     application
     id("org.jetbrains.kotlinx.kover") version "0.9.3"
     id("jacoco") // Apply the JaCoCo plugin
-    id("org.sonarqube") version "6.3.1.5724"
+    id("org.sonarqube") version "7.1.0.6387"
 }
 
 sonar {
