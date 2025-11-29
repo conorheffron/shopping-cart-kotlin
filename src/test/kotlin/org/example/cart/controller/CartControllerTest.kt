@@ -16,7 +16,7 @@ class CartControllerTest {
     @Test
     fun `addItemToCart should add item to cart and return success message`() {
         // Arrange
-        val cartItemJson = """{"name": "Apple", "quantity": 3}"""
+        val cartItemJson = """{"id": 7, "name": "Apple", "quantity": 3, "price": 3.99}"""
 
         // Act & Assert
         mockMvc.perform(
@@ -32,6 +32,8 @@ class CartControllerTest {
         Assertions.assertEquals(1, cart.size)
         Assertions.assertEquals("Apple", cart[0].name)
         Assertions.assertEquals(3, cart[0].quantity)
+        Assertions.assertEquals(7, cart[0].id)
+        Assertions.assertEquals(3.99, cart[0].price)
     }
 
     @Test

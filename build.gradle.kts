@@ -3,7 +3,7 @@ version = "1.0.8-RELEASE"
 
 plugins {
     kotlin("jvm") version "2.2.21"
-    id("org.springframework.boot") version "3.5.7"
+    id("org.springframework.boot") version "4.0.0"
     id("io.spring.dependency-management") version "1.1.7"
     kotlin("plugin.spring") version "2.2.21"
     application
@@ -30,7 +30,7 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.mockito:mockito-core:5.20.0") // For mocking
+    testImplementation("org.mockito:mockito-core:5.20.0")
 }
 
 tasks.test {
