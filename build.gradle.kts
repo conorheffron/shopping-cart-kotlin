@@ -1,5 +1,5 @@
 group = "org.example.cart"
-version = "1.0.7-RELEASE"
+version = "1.0.8-RELEASE"
 
 plugins {
     kotlin("jvm") version "2.2.21"
@@ -30,7 +30,7 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.mockito:mockito-core:5.20.0") // For mocking
+    testImplementation("org.mockito:mockito-core:5.20.0")
 }
 
 tasks.test {
