@@ -39,4 +39,4 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew build test koverXmlReport jacocoTestReport sonar --info
+        run: ./gradlew clean --write-verification-metadata pgp,sha256 --export-keys build test koverXmlReport jacocoTestReport sonar --info
