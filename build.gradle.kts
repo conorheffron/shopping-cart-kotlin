@@ -1,5 +1,5 @@
 group = "org.example.cart"
-version = "1.0.10-RELEASE"
+version = "1.2.0-RELEASE"
 
 plugins {
     kotlin("jvm") version "2.2.21"
@@ -7,9 +7,9 @@ plugins {
     id("io.spring.dependency-management") version "1.1.7"
     kotlin("plugin.spring") version "2.2.21"
     application
-    id("org.jetbrains.kotlinx.kover") version "0.9.3"
+    id("org.jetbrains.kotlinx.kover") version "0.9.4"
     id("jacoco") // Apply the JaCoCo plugin
-    id("org.sonarqube") version "7.2.0.6526"
+    id("org.sonarqube") version "7.2.1.6560"
 }
 
 sonar {
@@ -30,7 +30,7 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.mockito:mockito-core:5.20.0")
+    testImplementation("org.mockito:mockito-core:5.21.0")
 }
 
 tasks.test {
