@@ -9,7 +9,7 @@ plugins {
     application
     id("org.jetbrains.kotlinx.kover") version "0.9.4"
     id("jacoco") // Apply the JaCoCo plugin
-    id("org.sonarqube") version "7.2.1.6560"
+    id("org.sonarqube") version "7.2.2.6593"
 }
 
 sonar {
