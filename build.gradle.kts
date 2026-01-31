@@ -1,5 +1,5 @@
 group = "org.example.cart"
-version = "1.2.1-RELEASE"
+version = "1.2.2-RELEASE"
 
 plugins {
     kotlin("jvm") version "2.3.0"
