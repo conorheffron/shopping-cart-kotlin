@@ -9,7 +9,7 @@
 [Sonar Scan & Test Coverage - Overall Summary](https://sonarcloud.io/summary/overall?id=conorheffron_shopping-cart-kotlin&branch=main)
 
 ### Tech
- - JDK 17, Gradle 9, Kotlin 2.2, Spring Boot 4, JaCoCo, Kover, SonarQube
+ - JDK 17, Gradle 9, Kotlin 2, Spring Boot 4, JaCoCo, Kover, SonarQube
 
 ### Build Project & Run Tests
 ```
