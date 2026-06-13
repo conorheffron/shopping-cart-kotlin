@@ -7,7 +7,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.7"
     kotlin("plugin.spring") version "2.4.0"
     application
-    id("org.jetbrains.kotlinx.kover") version "0.9.4"
+    id("org.jetbrains.kotlinx.kover") version "0.9.8"
     id("jacoco") // Apply the JaCoCo plugin
     id("org.sonarqube") version "7.3.1.8318"
 }
